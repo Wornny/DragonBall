@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Fight - Style Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="battlefield">
+        <div class="background"></div>
+
+        <div class="battle-container">
+            <!-- Personnage Julien -->
+            <div class="character" id="julien">
+                <h2>Julien</h2>
+                <img src="img/gohan.jpg" alt="Julien" class="character-image">
+                <div class="hp-bar-container">
+                    <div class="hp-bar" id="julien-hp-bar"></div>
+                </div>
+                <p id="julien-hp">HP : 100</p>
+            </div>
+
+            <!-- Ennemis (Goku) -->
+            <div class="character" id="enemy">
+                <h2>Goku</h2>
+                <img src="img/goku.jpg" alt="Goku" class="character-image">
+                <div class="hp-bar-container">
+                    <div class="hp-bar" id="goku-hp-bar"></div>
+                </div>
+                <p id="goku-hp">HP : 100</p>
+            </div>
+        </div>
+
+        <!-- Log de combat -->
+        <div id="log">
+            <p>Que voulez-vous faire ?</p>
+        </div>
+
+        <!-- Menu d'actions -->
+        <div class="actions">
+            <button id="punch-btn">Attaquer (Coup de poing)</button>
+            <button id="kick-btn">Attaquer (Coup de pied)</button>
+            <button id="flee-btn">Fuir</button>
+        </div>
+    </div>
+
+    <script src="DB.js"></script>
+</body>
+</html>
