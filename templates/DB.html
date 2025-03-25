@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball - Combat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Combat Tour par Tour</h1>
+    
+    <div class="combat-container">
+        <div class="fighter">
+            <div class="character">Gohan</div>
+            <img src="{{ url_for('static', filename='gohan.jpg') }}" alt="Gohan" class="fighter-img">
+            <div class="bar-container">
+                <div class="bar" id="gohan-bar"></div>
+            </div>
+            <div class="actions">
+                <button onclick="attack('enemy', 'punch')">👊 Coup de poing</button>
+                <button onclick="attack('enemy', 'kick')">🦵 Coup de pied</button>
+                <button onclick="attack('enemy', 'kamehameha')">🔥 Kamehameha</button>
+            </div>
+        </div>
+
+        <div class="fighter">
+            <div class="character">Ennemi</div>
+            <img src="{{ url_for('static', filename='goku.jpg') }}" alt="Ennemi" class="fighter-img">
+            <div class="bar-container">
+                <div class="bar" id="enemy-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
